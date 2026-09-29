@@ -198,42 +198,6 @@ Cela permet d'activer rapidement les fonctions utilisées régulièrement sans p
 
 ---
 
-# 🚀 Installation
-
-## 1️⃣ Arborescence
-
-Placez Storm dans le dossier `resources/` de votre serveur FiveM :
-
-```text
-resources/
-└── storm/
-    ├── fxmanifest.lua
-    └── storm.lua
-```
-
-## 2️⃣ Ajouter la ressource
-
-Dans votre `server.cfg`, ajoutez :
-
-```cfg
-ensure storm
-```
-
-## 3️⃣ Redémarrer la ressource
-
-Depuis la console FiveM :
-
-```text
-restart storm
-```
-
-Ou redémarrez simplement votre serveur.
-
-> [!TIP]
-> Storm ne nécessite **aucune base de données** et **aucun framework externe**.
-
----
-
 # ⌨️ Contrôles
 
 Les contrôles peuvent être personnalisés directement depuis le menu.
@@ -265,60 +229,7 @@ Les éléments suivants peuvent être conservés :
 - 👕 Tenues
 - 🔗 Raccourcis personnalisés
 
-Aucune base de données SQL n'est nécessaire.
-
 ---
-
-# 🏗️ Architecture
-
-Storm est volontairement conçu avec une architecture simple.
-
-```text
-storm/
-│
-├── fxmanifest.lua
-│   └── Déclaration de la ressource FiveM
-│
-└── storm.lua
-    ├── Interface
-    ├── Navigation
-    ├── Véhicules
-    ├── Joueur
-    ├── Monde
-    ├── Tenues
-    ├── Utilitaires
-    ├── Binds
-    └── Sauvegarde KVP
-```
-
-### Stack
-
-```text
-Lua 5.4
-   │
-   ▼
-FiveM Client
-   │
-   ├── GTA V Natives
-   ├── DrawRect / DrawText
-   └── KVP Storage
-```
-
----
-
-# 🔧 Personnalisation
-
-Le projet étant écrit en **Lua**, il est possible d'ajouter facilement de nouvelles fonctionnalités.
-
-Exemple de structure :
-
-```lua
-local function myNewFeature()
-    -- Votre code
-end
-```
-
-Vous pouvez ensuite connecter cette fonction à une entrée du menu ou à un raccourci.
 
 Les éléments pouvant être personnalisés comprennent notamment :
 
@@ -331,20 +242,6 @@ Les éléments pouvant être personnalisés comprennent notamment :
 - 🌍 Paramètres du monde
 
 ---
-
-# ⚠️ Limitations & Compatibilité
-
-Storm fonctionne principalement **côté client**.
-
-Certaines modifications peuvent donc :
-
-- être uniquement visibles localement ;
-- être remplacées par la synchronisation du serveur ;
-- être bloquées par certaines ressources serveur ;
-- dépendre des permissions ou de la configuration du serveur.
-
-> [!IMPORTANT]
-> Utilisez Storm uniquement sur un serveur où vous disposez des **permissions nécessaires** ou dans un environnement de développement/test.
 
 ### Compatibilité
 
@@ -361,27 +258,8 @@ Certaines modifications peuvent donc :
 
 ---
 
-# 📜 Licence
-
-Ce projet est distribué sous licence **MIT**.
-
-Vous êtes libre de :
-
-- utiliser le projet ;
-- modifier le code ;
-- redistribuer votre version ;
-- contribuer au développement ;
-
-dans le respect des conditions de la licence.
-
----
-
 <div align="center">
 
 ### 🌩️ Storm
-
-**Lightweight · Standalone · Customizable**
-
-*FiveM Client Menu — Lua 5.4*
 
 </div>
