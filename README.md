@@ -3,8 +3,6 @@
 > **Menu autonome FiveM** — Véhicule · Joueur · Monde · Fun · Raccourcis
 
 **Fichier unique Lua · Aucune dépendance · Aucun framework requis · Standalone**
-
-![FiveM](https://img.shields.io/badge/FiveM-Cerulean-9146FF?style=flat-square)
 ![Lua](https://img.shields.io/badge/Lua-5.4-2C2D72?style=flat-square)
 ![License](https://img.shields.io/badge/Licence-MIT-3DA639?style=flat-square)
 ![Version](https://img.shields.io/badge/Version-1.0.0-EC4862?style=flat-square)
