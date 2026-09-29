@@ -27,15 +27,7 @@
 
 ## ✨ Présentation
 
-**Storm** est un menu client complet pour FiveM, conçu pour le **bac à sable, les tests et l'administration locale**.
-
-Il fonctionne **100 % côté client** et ne dépend d'aucun framework :
-
-- ❌ ESX
-- ❌ QBCore
-- ❌ vRP
-- ❌ ox_core
-- ❌ NUI
+**Storm** est un menu client complet pour FiveM.
 
 L'interface utilise directement les fonctions natives de rendu de GTA V (`DrawRect`, `DrawText`).
 
